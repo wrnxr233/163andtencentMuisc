@@ -8,7 +8,7 @@
 import requests
 import json
 import urllib.request
-import os
+import sys
 
 #到二仙桥
 print('欢迎访问仙人小站https://www.wrnxr.cc/\n更多干货等着你!\n')
@@ -22,7 +22,7 @@ try:
 except Exception as err:
     print(err,'服务器连接失败\n')
     input('按enter退出')
-    os._exit(0)
+    sys.exit()
 
 #保熟
 c0=(input('请选择音乐平台：\n1.QQ音乐\n2网易云音乐\n请选择：'))
